@@ -102,8 +102,6 @@ const data = [
 
   //   <span class="expandButton">+</span>
   // </div>
-
-
 let articleMaker = (article) => {
   const articlex = document.createElement("div")
   const title = document.createElement("h2")
@@ -124,8 +122,6 @@ let articleMaker = (article) => {
   date.classList.add("date")
   expandButton.classList.add("expandButton")
 
-  
-
   title.innerHTML = article.title
   date.innerHTML = article.date
   secondParagraph.innerHTML = article.firstParagraph
@@ -137,7 +133,7 @@ let articleMaker = (article) => {
   // Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   // This listener should toggle the class 'article-open' on div.article.
   expandButton.addEventListener("click", (event) => {
-    articlex.classList.toggle("article-open")
+    articlex.classList.toggle('article-open')
   })
 
   // Step 3: Don't forget to return something from your function!
@@ -149,6 +145,7 @@ data.map((event) => {
   let articles = document.querySelector(".articles")
   articles.append(articleMaker(event))
 })
+
   // Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   // Refresh the page to see the new article.
 
