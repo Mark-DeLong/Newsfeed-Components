@@ -20,7 +20,7 @@ let menuItems = [
   // The 'menuMaker' takes an array of menu items as its only argument.
   const header = document.querySelector(".header")
 
-  function menuMaker(array) {
+  function menuMaker (array) {
     const menu = document.createElement("div")
     const content = document.createElement("ul")
 
